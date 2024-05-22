@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Projeto React com TypeScript</title>
+
+    <link rel="stylesheet" href="/public/css/main.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      header {
+        background-color: #000;
+        color: #fff;
+        padding: 4rem 0;
+      }
+
+      header h1 {
+        font-size: 4rem;
+        color: #ff4081;
+        margin: 0;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        margin: 1rem 0 2rem 0;
+      }
+
+      header button {
+        padding: 0.8rem 2rem;
+        border: none;
+        background-color: #fff;
+        color: #000;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      .services{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+        background-color: red;
+      }
+
+      .portfolio {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+        background-color: green;
+      }
+
+      .service-card,
+      .portfolio-card {
+        width: 20%;
+        margin: 1rem 0;
+        padding: 2rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        text-align: left;
+      }
+
+      .service-card h3,
+      .portfolio-card h3 {
+        margin: 0;
+        font-size: 1.5rem;
+      }
+
+      .service-card p,
+      .portfolio-card h4 {
+        font-size: 1rem;
+        color: #666;
+      }
+
+      .portfolio-card img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+      }
+
+      .portfolio-card button {
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: #ff4081;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      .fun-facts {
+        display: flex;
+        justify-content: space-around;
+        margin: 4rem 0;
+      }
+
+      .fun-facts div {
+        text-align: center;
+      }
+
+      .fun-facts h2 {
+        font-size: 3rem;
+        margin: 0;
+        color: #ff4081;
+      }
+
+      .fun-facts p {
+        font-size: 1rem;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!--
+		Durante a fase de desenvolvimento é interessante utilizar os scripts
+		de desenvolvimento que, apesar de serem bem maiores, produzem alertas
+		importantes no console.
+
+		A versão de desenvolvimento, eventualmente, irá exibir um aviso para
+		instalar a extensão React DevTools no browser, o que, de fato, ajuda
+		bastante!!! https://reactjs.org/link/react-devtools
+
+		Para o ambiente de produção, convém utilizar as versões de produção.
+	-->
+    <script defer src="/public/lib/react/react.development.js"></script>
+    <script defer src="/public/lib/react/react-dom.development.js"></script>
+
+    <!--
+	<script defer src="/public/lib/react/react.production.min.js"></script>
+	<script defer src="/public/lib/react/react-dom.production.min.js"></script>
+	-->
+
+    <!--
+		Esse script é criado pelo processo de compilação do TypeScript
+	-->
+    <script defer src="/public/js/main.js"></script>
+  </body>
+</html>
